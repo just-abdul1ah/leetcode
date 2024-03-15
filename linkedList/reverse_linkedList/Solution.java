@@ -1,3 +1,5 @@
+import linkedList.ListNode;
+
 public class Solution {
     public ListNode reverseList(ListNode head) {
         if (head == null) return null;
@@ -12,13 +14,5 @@ public class Solution {
         }
         first.next = prev;
         return first;
-    }
-
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 }
